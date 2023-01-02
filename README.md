@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your)
+- Solution URL: [https://www.frontendmentor.io/solutions/loopstudios-landing-page-RJJ3-P-vJI]
 - Live Site URL: [https://udaceue.github.io/loopstudios-landing-page-main/](https://udaceue.github.io/loopstudios-landing-page-main/)
 
 ## My process
