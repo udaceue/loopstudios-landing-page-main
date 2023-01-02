@@ -364,7 +364,7 @@ footer
 }
 .socials__desktop{
   display: none;
-  min-width: 10rem
+  min-width: 10rem;
   height: 100%;
   justify-content: center;
 }
