@@ -55,24 +55,52 @@
     padding: 2.225rem;
     justify-content: space-between;
 }
-
-
-
-.mainNav {
-  /* position: absolute;
-  top: 0;
-  border: 3px solid green; */
+.logo{
+  z-index: 90;
 }
 
+@supports (backdrop-filter: blur(1rem)){
+  .mainNav__list{
+  backdrop-filter: blur(1rem);
+  background-color: hsl(0, 0%, 0%, 0.3);
+  }
+}
 
 .mainNav__list{
-    width: 700px;
-    list-style: none;
-    display: inline;
+  display: flex;
+  gap: 0.8rem;
+  background-color: hsl(0, 0%, 0%, 0.8);
+}
+
+[data-button="mobile-nav-toggle"]
+  {
+  display: none;
+  }
+
+@media (max-width:1000px) {
+    .mainNav__list{
+      position:fixed;
+      inset: 0 0 0 0%;
+      flex-direction: column;
+      padding: min(30vh, 15rem) 2rem;
+      gap: 2rem;
+    }
+
+    [data-button="mobile-nav-toggle"]
+    {
+      position: absolute;
+      right: 2rem;
+      z-index: 999;
+      aspect-ratio: 1;
+      width: 2rem;
+      display: block;
+    }
 }
 
 .mainNav__list > li{
-    display: inline-block;
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
 }
 .mainNav__list > li > a{
     text-decoration: none;
